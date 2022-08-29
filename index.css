@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: hsl(216, 12%, 8%);
+}
+.feedback-card {
+  background-color: #1a212b;
+  height: 26rem;
+  width: 26rem;
+  padding: 34px;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.feedback-card-star {
+  height: 58px;
+  width: 58px;
+  border-radius: 50%;
+  background-color: #262f38;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-family: Overpass;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 37px;
+  margin-bottom: 25px;
+  color: hsl(0, 0%, 100%);
+}
+p {
+  font-family: Overpass;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: hsl(217, 12%, 63%);
+}
+.feedback-card-ratings {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 33px;
+}
+input[type="radio"][name="votingNumbers"] {
+  display: none;
+}
+label {
+  display: inline-block;
+  font-family: Overpass;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: hsl(217, 12%, 63%);
+  background-color: #262f38;
+  height: 48px;
+  width: 48px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 50%;
+}
+label:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+input[type="radio"][name="votingNumbers"]:checked + label {
+  background-color:  hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+.submitbutton {
+  width: 380px;
+  height: 49px;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  margin-top: 33px;
+  border-radius: 50rem;
+  font-size: larger;
+  font-family: Overpass;
+  border: 0px;
+}
+.submitbutton:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.thankyouCard{
+  background-color: #1a212b;
+  height: 26rem;
+  width: 26rem;
+  padding: 34px;
+  border-radius: 2rem;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+}
+.thankyouCard-thanks{
+  text-align: center;
+}
+.votingReview{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Overpass;
+  font-weight: 400;
+  background-color:  hsl(213, 19%, 18%);
+  color: hsl(25, 97%, 53%);
+  margin-top: 3rem;
+  height: 1.5rem;
+  width: 16rem;
+  border-radius: 2.5rem;
+}
